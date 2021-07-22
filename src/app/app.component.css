@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    color: #EFCB4E;
+    font-weight: bold;
+}
+
+
+
+
+
+
+a { 
+    pointer-events:fill; 
+    cursor:pointer; 
+}

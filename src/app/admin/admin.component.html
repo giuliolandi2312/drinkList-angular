@@ -1,0 +1,50 @@
+<button class="btn btn-primary text-white"(click)="logout()">Log out</button>
+
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">firstName</th>
+      <th scope="col">lastName</th>
+      <th scope="col">email</th>
+      <th scope="col">password</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of users">
+      <th scope="row">{{ item.id }}</th>
+      <td>{{item.firstName}}</td>
+      <td>{{ item.lastName}}</td>
+      <td>{{ item.email}}</td>
+      <td>{{ item.password}}</td>
+    </tr>
+    </tbody>
+  </table>
+  
+  <div class="d-flex justify-content-between p-2">
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshUsers()">
+    </ngb-pagination>
+  
+    <select class="custom-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshUsers()">
+      <option [ngValue]="5">5 items per page</option>
+      <option [ngValue]="10">10 items per page</option>
+      <option [ngValue]="15">15 items per page</option>
+    </select>
+  </div>
+
+  <ng-template #content let-modal>
+    <div class="modal-header"style="background-color: #FBE1A9; border:none;">
+      <h4 class="modal-title" style="color: red;">Messaggio importante!</h4>
+      <button style="background-color: red;" type="button" class="close btn " aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true" style="color: white;">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" style="background-color: #FBE1A9;border:none;">
+      <p style="font-size: 30px;">Attenzione! Immettere dei dati utente!</p>
+    </div>
+    <div class="modal-footer "style="background-color: #FBE1A9;border:none;">
+      <button class="btn abtn mb-2 mr-2 " (click)="modal.dismiss('Cross click')">Ok</button>
+    </div>
+  </ng-template>

@@ -1,0 +1,19 @@
+<!--<pre>{{drink | json}}</pre>-->
+
+<div class="loader" *ngIf="!drink"></div>
+<div class="card" style="width: 70rem;">
+    <div class="row g-0 ">
+      <div class="col-md-4">
+        <img [src]="drink.strDrinkThumb + '/preview'" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">{{drink.strDrink}}</h5>
+            <p class="card-text">{{drink.strInstructionsIT}}</p>
+            <ul>
+                <li *ngFor="let i of ingredients" style="list-style-type: none;">{{i}}</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>

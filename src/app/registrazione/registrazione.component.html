@@ -1,0 +1,28 @@
+<form class="row m-5 bg-primary" style="margin-bottom: 400px ;">
+      <div class="container-fluid p-3 ">
+        <label for="firstName" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" #firstName = "ngModel" [(ngModel)]="user.firstName" placeholder="inserisci il tuo nome" required>
+        <label for="lastName" class="form-label">Cognome</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" #lastName = "ngModel" [(ngModel)]="user.lastName" placeholder="inserisci il tuo cognome" required>
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4"  name="email" #email = "ngModel" [(ngModel)]="user.email" placeholder="inserisci la tua email" required>
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" name="password" #passwors = "ngModel" [(ngModel)]="user.password" placeholder="inserisci una password" required>
+        <button type="submit" class="btn btn-primary bg-white text-primary my-5" (click)="iscriviti()">REGISTRATI</button>
+      </div>
+    </form>
+
+    <ng-template #content let-modal>
+      <div class="modal-header"style="background-color: #FBE1A9; border:none;">
+        <h4 class="modal-title" style="color: red;">Messaggio importante!</h4>
+        <button style="background-color: red;" type="button" class="close btn " aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true" style="color: white;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #FBE1A9;border:none;">
+        <p style="font-size: 30px;">Attenzione! Non lasciare campi vuoti!</p>
+      </div>
+      <div class="modal-footer "style="background-color: #FBE1A9;border:none;">
+        <button class="btn mb-2 mr-2 redb " (click)="modal.dismiss('Cross click')">Ok</button>
+      </div>
+    </ng-template>

@@ -1,0 +1,28 @@
+<div class="container bg-primary">
+    <label for="username">Email</label>
+     <input class="form-control" id="email" type="text" placeholder="insersci la tua email" #email="ngModel" [(ngModel)]='user.email' name="email" required>
+     <label for="password">Password</label>
+     <input class="form-control" id="password" type="password" placeholder="inserisci la tua password" [(ngModel)]='user.password' name="password"  required>
+     <button class="btn btn-primary bg-white text-primary my-5" type="submit" (click)="login(user)"  style="margin-top: 50px;">LOGIN</button>
+    </div>
+
+      <ng-template #content let-modal>
+        <div class="modal-header"style="background-color: #FBE1A9; border:none;">
+          <h4 class="modal-title" style="color: red;">Messaggio importante!</h4>
+          <button style="background-color: red;" type="button" class="close btn " aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true" style="color: white;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #FBE1A9;border:none;">
+          <p style="font-size: 30px;">Attenzione! User o password errati!</p>
+        </div>
+        <div class="modal-footer "style="background-color: #FBE1A9;border:none;">
+          <button class="btn  mb-2 mr-2 " (click)="modal.dismiss('Cross click')">Ok</button>
+        </div>
+      </ng-template>
+      
+
+      
+      <hr>
+      
+      <pre>{{ closeResult }}</pre>

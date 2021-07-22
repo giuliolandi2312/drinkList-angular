@@ -1,0 +1,88 @@
+.div1 {
+
+    height: 400px;
+    width: 400px;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMvvf-46l9vCf8vcOLBhdLwLorVArumnnTcw&usqp=CAU);
+    background-size: cover;
+    background-position:center;
+    border-radius:400px ;
+    border:2px solid white;
+    
+    
+}
+.div2 {
+
+    height: 400px;
+    width: 400px;
+    background-image:url(https://www.ricettealvolo.it/wp-content/uploads/2020/04/spritz.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius:400px ;
+    border:2px solid white;
+    
+    
+}
+.div3 {
+
+    height: 400px;
+    width: 400px;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCsQPGJ3iC1H9-bVkL4HR16soMj2aExf79ew&usqp=CAU);
+    background-size: cover;
+    background-position:center;
+    border-radius:400px ;
+    border:2px solid white;
+
+    
+    
+}
+.s1 {
+
+    height: 600px;
+    width: 600px;
+    background-image:url(https://www.foodserviceweb.it/wp-content/uploads/sites/4/2020/07/cocktail-spiaggia.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius:600px ;
+    border:2px solid white;
+    position: relative;
+    
+    
+}
+h1{
+    position:absolute;
+    bottom: 50px;
+    font-size: 5em;
+    color: #003F7C;
+    font-style: italic;
+    text-align: center;
+
+}
+h2 {
+    font-size: 3em;
+    color: #003F7C;
+    font-style: italic;
+
+}
+
+
+
+footer {
+    color:#003F7C;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.myh4f {
+    color: #003F7C;
+}
+.mymail, p {
+    text-decoration:none ;
+    color: #003F7C;
+}
+.mymail:hover {
+    color:rgb(238, 207, 71);
+}
+
+footer address small {
+    font-size: 10px;
+}

@@ -1,0 +1,12 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FBE1A9;
+}
+.btn {
+    background-color:#003F7C ;
+}
+.card-title {
+    color: purple;
+}

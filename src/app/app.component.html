@@ -1,0 +1,39 @@
+<header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class= "navbar-brand" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><img src="../assets/images/logo_epicode.jpg" style="height: 70px; width: 200px;border-radius:30px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color: white;" ></span>
+            </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown mb-3 ">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menù cocktail
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/alcoholic" routerLinkActive="active">Alcoholic</a></li>
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/non_alcoholic" routerLinkActive="active">Non Alcoholic</a></li>
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/ordinary_drink" routerLinkActive="active">Ordinary Drinks</a></li>
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/cocktail" routerLinkActive="active">Cocktails</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-3 ">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accesso utente
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/login" routerLinkActive="active">Login</a></li>
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/registazione" routerLinkActive="active">Registrazione</a></li>
+                  <li><a class="my-1 nav-link bg-primary" routerLink="/admin" [class.disabled]="authservice.isAuthenticated ? true : null">Admin</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+
+<router-outlet></router-outlet>

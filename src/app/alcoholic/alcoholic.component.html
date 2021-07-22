@@ -1,0 +1,18 @@
+<!--<pre>{{alcoholic | json}}</pre>-->
+
+<!--<div  *ngFor="let drink of alcoholic">
+    <div>{{drink.strDrink}}</div>
+    <div><img [src]="drink.strDrinkThumb + '/preview'" ></div>
+</div>-->
+<div *ngIf="errors">{{error.message}} </div>
+<div class="container">
+    <div class="row">
+        <div class="card m-3" style="width: 20rem;"*ngFor="let drink of alcoholic">
+            <img [src]="drink.strDrinkThumb + '/preview'" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{drink.strDrink}}</h5>
+              <a class="btn btn-primary" [routerLink]="['/alcoholic',drink.idDrink]">Get drunked!</a>
+            </div>
+          </div>
+    </div>
+</div>

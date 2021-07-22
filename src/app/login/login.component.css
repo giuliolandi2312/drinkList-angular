@@ -1,0 +1,27 @@
+
+label {
+    color: white;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.p-1 {
+    background-color:#F8C822 ;
+    font-size: 1.5em;
+    color: #003F7C;
+    border: 2px solid #003F7C;
+
+    width: 5em;
+}
+input {
+    background-color:#FBE1A9;
+    border:1 px solid white;
+    margin-top: 10px;
+}
+.container {
+    background-color:#003F7C ;
+    width: 30em;
+    margin-bottom: 500px;
+    border-radius: 30px;
+    border:3px solid white;
+    height: 370px;
+}
