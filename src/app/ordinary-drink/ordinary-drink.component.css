@@ -6,6 +6,7 @@
 }
 .btn {
     background-color:#003F7C ;
+    border-radius: 50px;
 }
 .card-title {
     color: purple;

@@ -6,7 +6,9 @@
             <img [src]="drink.strDrinkThumb + '/preview'" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{drink.strDrink}}</h5>
-              <a class="btn btn-primary" [routerLink]="['/ordinarydrink',drink.idDrink]">Get drunked!</a>
+              <a class="btn btn-primary" [routerLink]="['/ordinarydrink',drink.idDrink]"><mat-icon><span class="material-icons-outlined">
+                local_bar
+                </span></mat-icon></a>
             </div>
           </div>
     </div>

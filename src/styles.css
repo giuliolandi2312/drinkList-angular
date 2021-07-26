@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(0.50turn, #3f87a6, #ebf8e1, #f69d3c);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 .loader{ 
@@ -50,3 +50,5 @@ body {
     z-index: 1;
     filter: blur(30px);
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

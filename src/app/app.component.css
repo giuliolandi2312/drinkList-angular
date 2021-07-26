@@ -1,13 +1,12 @@
+header {
+    border: 3px solid white;
+    background-color: #3f87a6;
+}
 a {
     text-decoration: none;
     color: #EFCB4E;
     font-weight: bold;
 }
-
-
-
-
-
 
 a { 
     pointer-events:fill; 
