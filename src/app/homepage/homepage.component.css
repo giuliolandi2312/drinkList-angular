@@ -43,11 +43,11 @@ main {
 }
 .s1 {
     margin: 100px auto;
-    height: 600px;
+    height: 700px;
     width: 70%;
     background-image:url(https://www.foodserviceweb.it/wp-content/uploads/sites/4/2020/07/cocktail-spiaggia.jpg);
     background-size: cover;
-    background-position:center;
+    background-position:top;
     border-radius:600px ;
     border:2px solid white;
     position: relative;

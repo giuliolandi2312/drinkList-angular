@@ -1,7 +1,6 @@
 body {
     background: linear-gradient(0.50turn, #3f87a6, #ebf8e1, #f69d3c);
-    background-repeat: repeat;
-    background-size: cover;
+    background-repeat:repeat;
 }
 .loader{ 
     position: relative;
